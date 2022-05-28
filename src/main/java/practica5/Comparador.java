@@ -9,7 +9,7 @@ public class Comparador implements Comparator<Huffmannode>{
      if(a.getFrecuencia()>b.getFrecuencia()){
     return 1;       
         }
-     return 0;
+     return -1;
     }
   
 }

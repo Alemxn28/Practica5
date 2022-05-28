@@ -7,7 +7,7 @@ public class Huffmannode {
     private int frecuencia;
     private String codificacion;   
 
-Huffmannode izquierda,derecha;
+private Huffmannode izquierda,derecha;
 
 public Huffmannode(int pixel, int frecuencia){
   this.pixel=pixel;

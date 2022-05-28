@@ -83,7 +83,7 @@ public class ArbolHuffman {
     }
 
     public int deCadenaAPixel(String cadena, Huffmannode nodo) {
-        if (nodo.getCodificacion() == cadena) {
+        if (nodo.getCodificacion().equals(cadena)) {
             return nodo.getPixel();
         }
         int aux;

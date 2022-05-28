@@ -19,21 +19,18 @@ public class Practica5 {
         ArbolHuffman ArbolHuff = new ArbolHuffman(arreglo);
         Huffmannode arbol = ArbolHuff.getRaiz();
         ArbolHuff.codificararbol(arbol, "");
-        String codifica = ArbolHuff.obtenercodificacionpixel(2, arbol);
-        System.out.println(codifica);
         CodificarHuffman huff = new CodificarHuffman();
-      ArbolHuff.enorden(arbol);  
-      int matrizcodificada[][] = huff.codificarmatriz(ArbolHuff, matriz);
-      int matrizdecodificada[][]=huff.decodificarMatriz(ArbolHuff, matrizcodificada, 6);
-    
-      for (int i = 0; i < matrizdecodificada.length; i++) {
+        int matrizcodificada[][] = huff.codificarmatriz(ArbolHuff, matriz);
+        int matrizdecodificada[][] = huff.decodificarMatriz(ArbolHuff, matrizcodificada, 6);
+
+        for (int i = 0; i < matrizdecodificada.length; i++) {
             for (int j = 0; j < matrizdecodificada[i].length; j++) {
                 System.out.print(matrizdecodificada[i][j] + " ");
             }
             System.out.println();
         }
-        //System.out.println(huff.deStringAentero("111"));
-         
+        //System.out.println(huff.deStringAentero("111"));*
+
     }
 
 }
